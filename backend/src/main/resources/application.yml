@@ -1,0 +1,11 @@
+server:
+  port: ${BACKEND_PORT}
+spring:
+  datasource:
+    url: jdbc:mysql://${DATABASE_URL}:${DATABASE_PORT}/${DATABASE_SCHEMA}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
